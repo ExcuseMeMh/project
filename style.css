@@ -1,0 +1,1022 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 75px;
+    background-color: rgba(82, 8, 97, 0.568);
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo p {
+    float: left;
+    color: rgb(244, 255, 244);
+    text-transform: uppercase;
+}
+
+nav ul {
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a {
+    color: rgb(255, 249, 249);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0px 32px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(15, 15, 11);
+}
+
+.footer {
+    margin: 5px 0 0 0;
+    position: absolute;
+    background-image: linear-gradient(#5900ffab, #f800ffcf);
+    height: 360px;
+    width: 100%;
+    padding-top: 30px;
+    color: rgb(255, 255, 255);
+    top: 3183px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 3rem;
+    font-family: 'Quintessential', cursive;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: rgb(109, 0, 0);
+    font-weight: bold;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: rgb(255, 235, 235);
+    padding: 5px;
+}
+
+.socials a i {
+    font-size: 1rem;
+    width: 20px;
+}
+
+.socials a:hover i {
+    color: rgb(124, 148, 255);
+}
+
+.contact-form p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.form {
+    padding-top: 60px;
+    width: 65%;
+    float: left;
+    position: absolute;
+}
+
+.contact-form {
+    padding-top: 20px;
+}
+
+.contact-form h1 {
+    position: relative;
+    color: white;
+    margin-left: 250px;
+}
+
+.contact-form h1:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 150px;
+    height: 3px;
+    background-color: #a0c1ff;
+    margin-left: 30px;
+}
+
+.contact-form h3 {
+    font-size: 18px;
+    line-height: 20px;
+    color: #66ccff;
+    width: 150px;
+    margin-bottom: 10px;
+    margin-left: 160px;
+}
+
+.contact-form input[type=text],
+.contact-form textarea{
+    width: 50%;
+    font-size: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px solid #a7a7a7;
+    margin-left: 130px;
+}
+
+.button-btn {
+    border: none;
+    margin-left: 270px;
+}
+
+.button-btn {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    padding: 15px 50px;
+    background: #4dafff;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button-btn:hover {
+    background: #6f00ff93;
+    color: #ffffff;
+}
+
+#section-home {
+    color: white;
+    padding-top: 250px;
+    font-size: 4rem;
+    background: url('game2.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background-size: 100% 100%;
+    height: 150vh;
+    z-index: -1;
+    font-weight: bold;
+}
+
+#section-about {
+    background: url('games5.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 950px;
+    left: 0;
+    width: 100%;
+    height: 150vh;
+    z-index: -1;
+    color: white;
+}
+
+#section-ourproducts {
+    background: url('games3.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 1800px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-size: 100% 100%;
+}
+
+#section-services {
+    background: url('games.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 2400px;
+    background-size: 100% 100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+#section-contact {
+    background: url('games4.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 3000px;
+    background-size: 100% 100%;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    z-index: -1;
+}
+
+#section-about h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 4rem;
+}
+
+#section-about p {
+    margin-left: 30px;
+    margin-top: 50px;
+    color: rgb(255, 109, 109);
+    font-weight: bold;
+}
+
+.styling {
+    text-align: center;
+}
+
+#section-contact h1 {
+    font-size: 3rem;
+}
+
+.about-div {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(255, 97, 97);
+}
+
+.map {
+    float: right;
+    margin-right: 60px;
+    margin-top: 10px;
+}
+
+.imagecards p {
+    font-size: 18px;
+    margin-top: 220px;
+    padding: 100px;
+    color: white;
+}
+
+#card1 {
+    top: 60px;
+    margin-left: 10%;
+    margin-top: 100px;
+    width: 25%;
+    display: hidden;
+    position: absolute;
+}
+
+#card2 {
+    top: 60px;
+    margin-left: 40%;
+    margin-top: 100px;
+    width: 25%;
+    position: absolute;
+}
+
+#card3 {
+    top: 60px;
+    margin-left: 70%;
+    margin-top: 100px;
+    width: 25%;
+    position: absolute;
+}
+
+.divprod {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cardp {
+    color: white;
+}
+
+.servicep {
+    color: white;
+    width: 60%;
+    margin-left: 250px;
+    text-align: center;
+}
+
+#serv1 {
+    width: 25%;
+    margin-left: 100px;
+    height: 300px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+#serv2 {
+    width: 25%;
+    margin-left: 500px;
+    height: 300px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+#serv3 {
+    width: 25%;
+    margin-left: 900px;
+    height: 300px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.servimg1 {
+    height: 300px;
+    width: 100%;
+    margin: 0%;
+    background-size: auto;
+    border-style: solid;
+    background-repeat: no-repeat;
+}
+
+.servimg2 {
+    height: 300px;
+    width: 100%;
+    margin: 0%;
+    background-size: auto;
+    border-style: solid;
+    background-repeat: no-repeat;
+}
+
+.servimg3 {
+    height: 300px;
+    width: 100%;
+    margin: 0%;
+    background-size: auto;
+    border-style: solid;
+    background-repeat: no-repeat;
+}
+
+.servimg1:hover {
+    opacity: 0.3;
+}
+
+.servimg2:hover {
+    opacity: 0.3;
+}
+
+.servimg3:hover {
+    opacity: 0.3;
+}
+
+#serv1 p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#serv2 p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#serv3 p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.hovertogle {
+    margin-top: -150px;
+}
+
+
+@media screen and (max-width:768px) and (min-width:540px)
+{
+    nav ul li a {
+        color: rgb(255, 249, 249);
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0px 10px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        float: right;
+        margin-right: 0px;
+    }
+
+    .logo{
+        margin-left: -70px;
+    }
+
+    #serv1 {
+        width: 25%;
+        margin-left: 50px;
+        height: 300px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    
+    #serv2 {
+        width: 25%;
+        margin-left: 700px;
+        height: 300px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    
+    #serv3 {
+        width: 25%;
+        margin-left: 550px;
+        height: 300px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    
+    .servicep {
+        color: white;
+        width: 60%;
+        margin-left: 150px;
+        text-align: center;
+    }
+
+    .map iframe{
+        float: right;
+        margin-right: 10px;
+        margin-top: 120px;
+        width: 300px;
+        height: 500px;
+    }
+
+    .contact-form h1 {
+        position: relative;
+        color: white;
+        margin-left: 170px;
+    }
+
+    .contact-form {
+        padding-top: 20px;
+        margin-left: -100px;
+    }
+
+    .button-btn {
+        border: none;
+        margin-left: 220px;
+    }
+
+    .footer {
+        margin: 5px 0 0 0;
+        position: absolute;
+        background-image: linear-gradient(#5900ffab, #f800ffcf);
+        height: 360px;
+        width: 100%;
+        padding-top: 30px;
+        color: rgb(255, 255, 255);
+        top: 4025px;
+    }
+ }
+
+
+
+@media screen and (max-width:845px) and (min-width:768px)
+{
+    nav ul li a {
+        color: rgb(255, 249, 249);
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0px 10px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        float: right;
+        margin-right: 0px;
+    }
+
+    .logo{
+        margin-left: -70px;
+    }
+
+    #serv1 {
+        width: 25%;
+        margin-left: 50px;
+        height: 300px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    
+    #serv2 {
+        width: 25%;
+        margin-left: 300px;
+        height: 300px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    
+    #serv3 {
+        width: 25%;
+        margin-left: 550px;
+        height: 300px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    
+    .servicep {
+        color: white;
+        width: 60%;
+        margin-left: 150px;
+        text-align: center;
+    }
+
+    .map iframe{
+        float: right;
+        margin-right: 10px;
+        margin-top: 120px;
+        width: 300px;
+        height: 500px;
+    }
+
+    .contact-form h1 {
+        position: relative;
+        color: white;
+        margin-left: 170px;
+    }
+
+    .contact-form {
+        padding-top: 20px;
+        margin-left: -100px;
+    }
+
+    .button-btn {
+        border: none;
+        margin-left: 220px;
+    }
+
+    .footer {
+        margin: 5px 0 0 0;
+        position: absolute;
+        background-image: linear-gradient(#5900ffab, #f800ffcf);
+        height: 360px;
+        width: 100%;
+        padding-top: 30px;
+        color: rgb(255, 255, 255);
+        top: 4025px;
+    }
+ }
+
+@media screen and (max-width:1000px) and (min-width:845px)
+{
+    nav ul li a {
+        color: rgb(255, 249, 249);
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0px 10px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        float: right;
+        margin-right: 0px;
+    }
+
+    .logo{
+        margin-left: -70px;
+    }
+
+    #serv1 {
+        width: 25%;
+        margin-left: 50px;
+        height: 300px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    
+    #serv2 {
+        width: 25%;
+        margin-left: 350px;
+        height: 300px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    
+    #serv3 {
+        width: 25%;
+        margin-left: 650px;
+        height: 300px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    
+    .servicep {
+        color: white;
+        width: 60%;
+        margin-left: 180px;
+        text-align: center;
+    }
+
+    .map iframe{
+        float: right;
+        margin-right: 10px;
+        margin-top: 120px;
+        width: 300px;
+        height: 500px;
+    }
+
+    .contact-form h1 {
+        position: relative;
+        color: white;
+        margin-left: 170px;
+    }
+
+    .contact-form {
+        padding-top: 80px;
+        /* margin-left: -50px; */
+    }
+
+    .button-btn {
+        border: none;
+        margin-left: 220px;
+    }
+
+    .footer {
+        margin: 5px 0 0 0;
+        position: absolute;
+        background-image: linear-gradient(#5900ffab, #f800ffcf);
+        height: 360px;
+        width: 100%;
+        padding-top: 30px;
+        color: rgb(255, 255, 255);
+        top: 4025px;
+    }
+ }
+
+ @media screen and (max-width:1200px) and (min-width:1000px)
+{
+    nav ul li a {
+        color: rgb(255, 249, 249);
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0px 25px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        float: right;
+        margin-right: 0px;
+    }
+
+    .logo{
+        margin-left: 0px;
+    }
+
+    #serv1 {
+        width: 25%;
+        margin-left: 80px;
+        height: 300px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    
+    #serv2 {
+        width: 25%;
+        margin-left: 410px;
+        height: 300px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    
+    #serv3 {
+        width: 25%;
+        margin-left: 730px;
+        height: 300px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    
+    .servicep {
+        color: white;
+        width: 60%;
+        margin-left: 200px;
+        text-align: center;
+    }
+
+    .map iframe{
+        float: right;
+        margin-right: 10px;
+        margin-top: 120px;
+        width: 400px;
+        height: 650px;
+    }
+
+    .contact-form h1 {
+        position: relative;
+        color: white;
+        margin-left: 170px;
+    }
+
+    .contact-form {
+        padding-top: 80px;
+        margin-left: 0px;
+    }
+
+    .button-btn {
+        border: none;
+        margin-left: 220px;
+    }
+
+    .footer {
+        margin: 5px 0 0 0;
+        position: absolute;
+        background-image: linear-gradient(#5900ffab, #f800ffcf);
+        height: 360px;
+        width: 100%;
+        padding-top: 30px;
+        color: rgb(255, 255, 255);
+        top: 4025px;
+    }
+ }
+ @media screen and (max-width:1500px) and (min-width:1200px)
+{
+    nav ul li a {
+        color: rgb(255, 249, 249);
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0px 25px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        float: right;
+        margin-right: 0px;
+    }
+
+    .logo{
+        margin-left: 0px;
+    }
+
+    #serv1 {
+        width: 25%;
+        margin-left: 80px;
+        height: 300px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    
+    #serv2 {
+        width: 25%;
+        margin-left: 540px;
+        height: 300px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    
+    #serv3 {
+        width: 25%;
+        margin-left: 1000px;
+        height: 300px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    
+    .servicep {
+        color: white;
+        width: 60%;
+        margin-left: 200px;
+        text-align: center;
+    }
+
+    .map iframe{
+        float: right;
+        margin-right: 10px;
+        margin-top: 120px;
+        width: 400px;
+        height: 600px;
+    }
+
+    .contact-form h1 {
+        position: relative;
+        color: white;
+        margin-left: 170px;
+    }
+
+    .contact-form {
+        padding-top: 80px;
+        margin-left: 0px;
+    }
+
+    .button-btn {
+        border: none;
+        margin-left: 220px;
+    }
+
+    .footer {
+        margin: 5px 0 0 0;
+        position: absolute;
+        background-image: linear-gradient(#5900ffab, #f800ffcf);
+        height: 360px;
+        width: 100%;
+        padding-top: 30px;
+        color: rgb(255, 255, 255);
+        top: 3783px;
+    }
+ }
+
+
+ @media screen and (max-height:800px) and (min-height:600px)
+{
+  
+    .footer {
+        margin: 5px 0 0 0;
+        position: absolute;
+        background-image: linear-gradient(#5900ffab, #f800ffcf);
+        height: 360px;
+        width: 100%;
+        padding-top: 30px;
+        color: rgb(255, 255, 255);
+        top: 3783px;
+
+    }
+    #section-home {
+        color: white;
+        padding-top: 250px;
+        font-size: 4rem;
+        background: url('game2.jpg') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        background-size: 100% 100%;
+        height: 150vh;
+        z-index: -1;
+        font-weight: bold;
+    }
+    
+    #section-about {
+        background: url('games5.jpg') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 900px;
+        left: 0;
+        width: 100%;
+        height: 150vh;
+        z-index: -1;
+        color: white;
+    }
+    
+    #section-ourproducts {
+        background: url('games3.jpg') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 1800px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+        background-size: 100% 100%;
+    }
+    
+    #section-services {
+        background: url('games.jpg') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 2400px;
+        background-size: 100% 100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+    }
+    
+    #section-contact {
+        background: url('games4.jpg') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 3000px;
+        background-size: 100% 100%;
+        left: 0;
+        width: 100%;
+        height: 120vh;
+        z-index: -1;
+    }
+
+ }
+ @media screen and (max-height:600px) and (min-height:450px)
+{
+
+    .footer {
+        margin: 5px 0 0 0;
+        position: absolute;
+        background-image: linear-gradient(#5900ffab, #f800ffcf);
+        height: 360px;
+        width: 100%;
+        padding-top: 30px;
+        color: rgb(255, 255, 255);
+        top: 3589px;
+
+    }
+    #section-home {
+        color: white;
+        padding-top: 250px;
+        font-size: 4rem;
+        background: url('game2.jpg') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        background-size: 100% 100%;
+        height: 150vh;
+        z-index: -1;
+        font-weight: bold;
+    }
+    
+    #section-about {
+        background: url('games5.jpg') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 860px;
+        left: 0;
+        width: 100%;
+        height: 150vh;
+        z-index: -1;
+        color: white;
+    }
+    
+    #section-ourproducts {
+        background: url('games3.jpg') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 1700px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+        background-size: 100% 100%;
+    }
+    
+    #section-services {
+        background: url('games.jpg') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 2300px;
+        background-size: 100% 100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+    }
+    
+    #section-contact {
+        background: url('games4.jpg') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 2900px;
+        background-size: 100% 100%;
+        left: 0;
+        width: 100%;
+        height: 120vh;
+        z-index: -1;
+    }
+
+    #card1{
+        height: 300px;
+        width: 25%;
+    }
+
+ }
+
+
